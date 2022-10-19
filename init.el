@@ -1,6 +1,7 @@
 ;; -*- lexical-binding: t; -*-
 (require 'package)
 (load-file "~/.emacs.d/scripts/git.el")
+(load-file "~/.emacs.d/scripts/explr.el")
 
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
 (package-initialize)
