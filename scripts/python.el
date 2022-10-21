@@ -4,4 +4,4 @@
      (list (read-file-name "Filename: "))))
   (if (string= filename "")
       (setq filename (buffer-name)))
-  (shell-command (concat "python "filename)))
+  (shell-command (concat "python " filename)))
