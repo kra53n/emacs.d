@@ -3,6 +3,7 @@
 (load-file "~/.emacs.d/scripts/git.el")
 (load-file "~/.emacs.d/scripts/explr.el")
 (load-file "~/.emacs.d/scripts/rust.el")
+(load-file "~/.emacs.d/scripts/python.el")
 
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
 (package-initialize)
