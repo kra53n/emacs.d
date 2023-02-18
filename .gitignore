@@ -1,5 +1,6 @@
-# dirs
 auto-save-list/
 elpa/
-themes/
 url/
+slime*/
+
+*-theme*
