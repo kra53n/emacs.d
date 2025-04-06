@@ -40,6 +40,30 @@
  'default-frame-alist
  '(font . "JetBrains Mono-10"))
 
+
+;;; HOOKS
+
+(defun my-c-mode-hook ()
+  (setq c-basic-offset 4)
+  (setq tab-width 4)
+  (setq indent-tabs-mode nil))
+
+(add-hook 'c-mode-hook 'my-c-mode-hook)
+
+(add-hook 'text-mode-hook 'auto-fill-mode)
+
+
+;;; KEYBINDINGS
+
+(global-set-key (kbd "M--") 'untabify)
+(global-set-key (kbd "M-p") 'ace-window)
+(global-set-key (kbd "M-f") 'find-file)
+(global-set-key (kbd "M-b") 'switch-to-buffer)
+(global-set-key (kbd "M-2") 'split-window-below)
+(global-set-key (kbd "M-3") 'split-window-right)
+(global-set-key (kbd "M-o") 'compile)
+
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
